@@ -1,3 +1,3 @@
-module play-with-graph-algorithms
+module graph
 
 go 1.13
