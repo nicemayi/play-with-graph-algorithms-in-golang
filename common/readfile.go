@@ -36,7 +36,7 @@ func GetUnweightedGraphFromFile(filename string) *UnweightedGraphInfo {
 	for i, content := range res {
 		c := convertStringSliceAoIntSlice(strings.Split(content, " "))
 		if i == 0 {
-			// Through out the course
+			// Through out this course
 			// the first line should always have two values:
 			// number of verticals & number of edges
 			g.V, g.E = c[0], c[1]
