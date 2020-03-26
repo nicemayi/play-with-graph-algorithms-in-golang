@@ -2,17 +2,16 @@ package common
 
 import (
 	"bufio"
-	"log"
 	"os"
 	"strconv"
 	"strings"
 )
 
 func convertStringSliceAoIntSlice(ss []string) []int {
-	res := make([]int, 0)
-	for _, s := range ss {
+	res := make([]int, len(ss))
+	for i, s := range ss {
 		val, _ := strconv.Atoi(s)
-		res = append(res, val)
+		res[i] = val
 	}
 	return res
 }
@@ -20,7 +19,7 @@ func convertStringSliceAoIntSlice(ss []string) []int {
 func GetUnweightedGraphFromFile(filename string) *UnweightedGraphInfo {
 	file, err := os.Open(filename)
 	if err != nil {
-		log.Fatal(err)
+		panic(err)
 	}
 	defer file.Close()
 
