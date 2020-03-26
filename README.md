@@ -1,1 +1,5 @@
-# play-with-graph-algorithms-in-golang
+# Play With Graph Algorithms in Golang
+
+Golang implementation of imooc course [玩转图论算法](https://coding.imooc.com/class/370.html)
+
+Check/fork original repo from course instructor [liuyubobobo](https://github.com/liuyubobobo)!
