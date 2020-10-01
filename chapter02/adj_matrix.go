@@ -27,7 +27,7 @@ func NewAdjMatrix(filename string) *AdjMatrix {
 	adjMatrix.v = gInfo.V
 	adjMatrix.e = gInfo.E
 	adjMatrix.adj = make([][]int, adjMatrix.v)
-	for i := 0; i < adjMatrix.v; i++ {
+	for i := range adjMatrix.adj {
 		adjMatrix.adj[i] = make([]int, adjMatrix.v)
 	}
 
